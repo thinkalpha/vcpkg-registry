@@ -2,7 +2,7 @@
   "name": "table-ws-protocol",
   "version": "0.1.0",
   "homepage": "https://github.com/thinkalpha/table-client-cpp",
-  "description": "C++ client library for reading and writing Table Web Service protocol messages (flatbuffers)",
+  "description": "Low-level C++ headers for reading and writing Table Web Service protocol messages (flatbuffers), with corresponding flatbuffers JSON schema.",
   "dependencies": [
     {
       "name": "vcpkg-cmake",

@@ -2,7 +2,7 @@
     "versions": [
         {
             "version": "0.1.0",
-            "git-tree": ""
+            "path": "$/ports/table-ws-protocol"
         }
     ]
 }
