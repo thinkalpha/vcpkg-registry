@@ -1,8 +1,8 @@
 {
     "default": {
         "table-ws-protocol": {
-            "baseline": "0.1.0",
-            "port-version": 0
+            "baseline": "0.2.0",
+            "port-version": 1
         }
     }
 }
