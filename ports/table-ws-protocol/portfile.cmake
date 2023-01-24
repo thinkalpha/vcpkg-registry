@@ -41,12 +41,10 @@
 #     SHA512 cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e
 # )
 
-vcpkg_extract_source_archive_ex(
-    OUT_SOURCE_PATH SOURCE_PATH
+vcpkg_extract_source_archive(
+    SOURCE_PATH
     ARCHIVE "\\\\wsl.localhost\\Debian\\home\\jarrod\\Dev\\table-ws-ng\\src\\protocol\\flatbuffer\\table-ws-protocol-1.0.0.tar"
     NO_REMOVE_ONE_LEVEL
-    # (Optional) A friendly name to use instead of the filename of the archive (e.g.: a version number or tag).
-    # REF 1.0.0
     # (Optional) Read the docs for how to generate patches at:
     # https://github.com/Microsoft/vcpkg/blob/master/docs/examples/patching.md
     # PATCHES
