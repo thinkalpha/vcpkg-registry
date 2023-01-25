@@ -29,21 +29,38 @@
 #
 # 	See additional helpful variables in /docs/maintainers/vcpkg_common_definitions.md
 
+# The CCI for the Proxy uploads an archive of the C++ protocol files.
+# The archive name includes the 7 character SHA1 of the commit that triggered the CI.
+# See: https://alphaengines.slack.com/archives/CNMEH4RSQ/p1674509868593579?thread_ts=1674074963.913839&cid=CNMEH4RSQ
+# set(COMMIT_SHA1 25b56fb)
+set(COMMIT_SHA1 fffffff)
+
 # Also consider vcpkg_from_* functions if you can; the generated code here is for any web accessable
 # source archive.
 #  vcpkg_from_github
 #  vcpkg_from_gitlab
 #  vcpkg_from_bitbucket
 #  vcpkg_from_sourceforge
-# vcpkg_download_distfile(ARCHIVE
-#     URLS "C:\\Dev\\Projects\\Work\\ThinkAlpha\\table-ws-nextgen\\src\\protocol\\flatbuffer\\table-ws-protocol-1.0.0.tar.gz"
-#     FILENAME "table-ws-protocol-local-1.0.0.tar.gz"
-#     SHA512 cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e
+# vcpkg_download_distfile(SOURCE_ARCHIVE
+#     URLS "https://download-site.prod.thinkalpha.io/table-ws-ng/table-ws-ng-headers-${COMMIT_SHA1}.tar.gz"
+#     FILENAME "table-ws-ng-headers-25b56fb.tar.gz"
+#     SHA512 84f7769be3414566060fd595f98b8ab863a1591d6a68cf8b7262a57f672a031d0a2f87fc572f39df8d3ba785152cd08f1ac7b0ca379342d5c6172f41460a34b6
+# )
+
+# vcpkg_extract_source_archive(
+#     SOURCE_PATH
+#     ARCHIVE "${SOURCE_ARCHIVE}"
+#     NO_REMOVE_ONE_LEVEL
+#     # (Optional) Read the docs for how to generate patches at:
+#     # https://github.com/Microsoft/vcpkg/blob/master/docs/examples/patching.md
+#     # PATCHES
+#     #   001_port_fixes.patch
+#     #   002_more_port_fixes.patch
 # )
 
 vcpkg_extract_source_archive(
     SOURCE_PATH
-    ARCHIVE "\\\\wsl.localhost\\Debian\\home\\jarrod\\Dev\\table-ws-ng\\src\\protocol\\flatbuffer\\table-ws-protocol-1.0.0.tar"
+    ARCHIVE "\\\\wsl.localhost\\Debian\\home\\jarrod\\Dev\\table-ws-ng\\src\\protocol\\flatbuffer\\table-ws-ng-headers-${COMMIT_SHA1}.tar"
     NO_REMOVE_ONE_LEVEL
     # (Optional) Read the docs for how to generate patches at:
     # https://github.com/Microsoft/vcpkg/blob/master/docs/examples/patching.md
@@ -70,14 +87,19 @@ vcpkg_cmake_configure(
 
 vcpkg_cmake_install()
 
-# # Moves all .cmake files from /debug/share/pxc/ to /share/pxc/
-# # See /docs/maintainers/ports/vcpkg-cmake-config/vcpkg_cmake_config_fixup.md for more details
-# When you uncomment "vcpkg_cmake_config_fixup()", you need to add the following to "dependencies" vcpkg.json:
-#{
-#    "name": "vcpkg-cmake-config",
-#    "host": true
-#}
-# vcpkg_cmake_config_fixup()
+if(VCPKG_TARGET_IS_WINDOWS)
+    vcpkg_cmake_config_fixup(CONFIG_PATH cmake)
+else()
+    vcpkg_cmake_config_fixup(CONFIG_PATH lib/cmake/table-ws-protocol)
+endif()
+
+vcpkg_fixup_pkgconfig()
+
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include" "${CURRENT_PACKAGES_DIR}/debug/share")
+
+if(VCPKG_TARGET_IS_WINDOWS)
+    file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug" "${CURRENT_PACKAGES_DIR}/lib")
+endif()
 
 # Uncomment the line below if necessary to install the license file for the port
 # as a file named `copyright` to the directory `${CURRENT_PACKAGES_DIR}/share/${PORT}`
