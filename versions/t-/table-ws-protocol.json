@@ -2,7 +2,7 @@
     "versions": [
         {
             "version": "0.2.0",
-            "port-version": 1,
+            "port-version": 18,
             "path": "$/ports/table-ws-protocol"
         }
     ]
