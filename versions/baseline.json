@@ -2,7 +2,7 @@
     "default": {
         "table-ws-protocol": {
             "baseline": "0.2.0",
-            "port-version": 18
+            "port-version": 20
         }
     }
 }
