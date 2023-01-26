@@ -3,7 +3,7 @@
         {
             "version": "0.2.0",
             "port-version": 20,
-            "path": "$/ports/table-ws-protocol"
+            "git-tree": "8663119b444a0d96bc3b2f25ba880b0378708a4b"
         }
     ]
 }
