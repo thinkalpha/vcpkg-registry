@@ -2,12 +2,12 @@
 # The archive name includes the 7 character SHA1 of the commit that triggered the CI.
 # See: https://alphaengines.slack.com/archives/CNMEH4RSQ/p1674509868593579?thread_ts=1674074963.913839&cid=CNMEH4RSQ
 
-set(COMMIT_SHA1 1ce7064)
+set(COMMIT_SHA1 613ed20)
 
 vcpkg_download_distfile(SOURCE_ARCHIVE
     URLS "https://download-site.prod.thinkalpha.io/table-ws-ng/table-ws-ng-headers-${COMMIT_SHA1}.tar.gz"
     FILENAME "table-ws-ng-headers-${COMMIT_SHA1}.tar.gz"
-    SHA512 1c0731fa122ad30405c883b25fd351a2de0b11bcab880a31107588a5fab0166c6c5f6b5372f059c17f735adfee62012ae7e28615d7e7cd51e14f1078cc417e62
+    SHA512 7dc4a6bff283e2181876203bc6c9ae70325730c96e1af42cce1e8fc97d2d9da1f5f9d89109d007cc28f9f91fe45daecdf535aa2658907c14f55e801e4ee8030a
 )
 
 vcpkg_extract_source_archive(
