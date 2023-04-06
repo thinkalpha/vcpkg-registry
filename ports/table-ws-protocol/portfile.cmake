@@ -7,7 +7,7 @@ set(COMMIT_SHA1 613ed20)
 vcpkg_download_distfile(SOURCE_ARCHIVE
     URLS "https://download-site.prod.thinkalpha.io/table-ws-ng/table-ws-ng-headers-${COMMIT_SHA1}.tar.gz"
     FILENAME "table-ws-ng-headers-${COMMIT_SHA1}.tar.gz"
-    SHA512 7dc4a6bff283e2181876203bc6c9ae70325730c96e1af42cce1e8fc97d2d9da1f5f9d89109d007cc28f9f91fe45daecdf535aa2658907c14f55e801e4ee8030a
+    SHA512 0506117963239e55ef837fcb179178f47b547fbe161f8e7706aa447e18fe86c2a0f0c661a84a7e9822482993c1fdc612ec9ecd2210331dafc1bd2bf03697a489
 )
 
 vcpkg_extract_source_archive(
