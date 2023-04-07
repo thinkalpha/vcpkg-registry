@@ -1,6 +1,6 @@
 {
   "name": "table-ws-protocol",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "port-version": 0,
   "homepage": "https://github.com/thinkalpha/table-client-cpp",
   "description": "Low-level C++ headers for reading and writing Table Web Service protocol messages (flatbuffers), with corresponding flatbuffers JSON schema.",
