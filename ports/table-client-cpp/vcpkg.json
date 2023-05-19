@@ -1,0 +1,32 @@
+{
+  "name": "table-client-cpp",
+  "version": "0.1.0",
+  "port-version": 0,
+  "homepage": "https://github.com/thinkalpha/table-client-cpp",
+  "description": "proxy client",
+  "dependencies": [
+    {  
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    },
+    { "name": "boost-asio", "version>=": "1.80.0" },
+    { "name": "flatbuffers", "version>=": "2.0.0#3" },
+    { "name": "catch2", "version>=": "2.13.8#1" },
+    { "name": "spdlog", "version>=": "1.10.0" },
+    { "name": "openssl" },
+    { "name": "table-ws-protocol" },
+    { "name": "boost-uuid" }
+  ],
+  "builtin-baseline": "6ca56aeb457f033d344a7106cb3f9f1abf8f4e98",
+  "overrides": [
+    { "name": "flatbuffers", "version": "2.0.0#3" },
+    { "name": "catch2", "version": "2.13.8#1" },
+    { "name": "spdlog", "version": "1.10.0" },
+    { "name": "table-ws-protocol", "version": "0.3.2#0" }
+  ]
+}
+

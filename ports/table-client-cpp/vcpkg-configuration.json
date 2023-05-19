@@ -1,0 +1,10 @@
+{
+  "registries": [ 
+    {
+      "kind": "git",
+      "repository": "https://github.com/thinkalpha/vcpkg-registry",
+      "baseline": "8ed0ea5314ccd4443f022db6ed8b7f2f58167556",
+      "packages": [ "table-ws-protocol" ]
+    }
+  ]
+}
