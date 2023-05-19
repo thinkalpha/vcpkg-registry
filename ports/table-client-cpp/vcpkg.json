@@ -5,7 +5,7 @@
   "homepage": "https://github.com/thinkalpha/table-client-cpp",
   "description": "proxy client",
   "dependencies": [
-    {  
+    {
       "name": "vcpkg-cmake",
       "host": true
     },
