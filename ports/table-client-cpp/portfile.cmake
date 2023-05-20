@@ -7,7 +7,7 @@ vcpkg_from_github(
   AUTHORIZATION_TOKEN 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 
   REF daaaf90da2b215eb26fb693018f804d5a4ca5d0d
   SHA512 a7a6bf58065443087faeb8613030f28bfe1034ac81c5af54a69acdac3817172858694c1dc3e8e70cc3b8cb9550952a6384805e7c64f4e8cf76c7c6a272e03fce 
-  HEAD_REF main
+  HEAD_REF add-table-client-cpp
 )
 
 vcpkg_cmake_configure(
