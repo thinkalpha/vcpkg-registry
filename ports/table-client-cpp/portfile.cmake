@@ -5,7 +5,7 @@ vcpkg_from_github(
   REPO thinkalpha/table-client-cpp
   #  GITHUB_HOST ssh://git@github.com
   AUTHORIZATION_TOKEN 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 
-  REF daaaf90da2b215eb26fb693018f804d5a4ca5d0d
+  REF 1b350cb6ac1ee487765ddcc5551fba5c12488a16 #daaaf90da2b215eb26fb693018f804d5a4ca5d0d
   SHA512 a7a6bf58065443087faeb8613030f28bfe1034ac81c5af54a69acdac3817172858694c1dc3e8e70cc3b8cb9550952a6384805e7c64f4e8cf76c7c6a272e03fce 
   HEAD_REF main 
 )
@@ -25,9 +25,6 @@ vcpkg_cmake_config_fixup(CONFIG_PATH lib/cmake/table-client-cpp)
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug" "${CURRENT_PACKAGES_DIR}/lib")
 
-# vcpkg_copy_pdbs()
-# file(INSTALL "${SOURCE_PATH}/LICENSE.txt" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright)
+file(INSTALL "${SOURCE_PATH}/COPYING" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright)
 
-# Uncomment the line below if necessary to install the license file for the port
-# as a file named `copyright` to the directory `${CURRENT_PACKAGES_DIR}/share/${PORT}`
-# vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")
+
