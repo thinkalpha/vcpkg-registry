@@ -2,7 +2,7 @@
   "default": {
     "table-rdf": {
       "baseline": "0.1.0",
-      "port-version": 8
+      "port-version": 9
     },
     "table-ws-protocol": {
       "baseline": "0.3.2",
