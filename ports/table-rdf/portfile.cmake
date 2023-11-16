@@ -4,7 +4,6 @@ vcpkg_from_github(
     HEAD_REF main
     REF 34d7d95a8d995d1294cc89e2e608c20a62cf48b2
     SHA512 0
-    AUTHORIZATION_TOKEN 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
     HEAD_REF master
 )
 
