@@ -2,7 +2,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO thinkalpha/table-rdf
     HEAD_REF main
-    REF 34d7d95a8d995d1294cc89e2e608c20a62cf48b2
+    REF 4ec3ecbb58835171caf3378298a2fe6bc09f7ed5
     SHA512 0
     HEAD_REF master
 )
