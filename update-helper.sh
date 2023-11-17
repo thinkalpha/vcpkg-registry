@@ -4,13 +4,6 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 #
 # This script helps update a port that uses vcpkg_from_github().
 #
-# Steps:
-#
-# 1. Commit and push your changes to the port repo, i.e. https://github.com/thinkalpha/table-rdf.
-# 2. Make any required changes to the port files under ports/<your port>/.
-# 3. Run this script with -t <GitHub access token> -c <full commit SHA> -r <repo base url>.
-# 4. Follow script instructions.
-#
 
 cd ${SCRIPT_DIR}
 
