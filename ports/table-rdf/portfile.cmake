@@ -2,8 +2,8 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO thinkalpha/table-rdf
     HEAD_REF main
-    REF ac10ac27988b148d5861368928aee272db215f9f
-    SHA512 4ddc4e8bced411f75ebc8dc6a51d0fde4ea58f105d2adacdf693f986adcad14de78e87a28b38e1c610a8d1b8c189b5892d15a1283c9db1e6ae86dcce8d10a60a
+    REF bb87733e8890f8e409e7aea424f2edd646b118c2
+    SHA512 b30d05ea6772a2f35b999546df2e3ea3626a7eb3156dd9510bf48d4bfb90f1f9caac36f570e5df43a5b93a6ed8aa5bd626a38c5cd51f541f3dd328b1443275a7
     HEAD_REF master
 )
 
