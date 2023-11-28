@@ -1,11 +1,15 @@
 {
   "name": "table-rdf",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Table Record Data Format (RDF) Library",
   "homepage": "https://github.com/thinkalpha/table-rdf",
   "dependencies": [
     {
       "name": "boost-align",
+      "version>=": "1.80.0"
+    },
+    {
+      "name": "boost-interprocess",
       "version>=": "1.80.0"
     },
     {
