@@ -1,6 +1,6 @@
 {
   "name": "table-rdf",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Table Record Data Format (RDF) Library",
   "homepage": "https://github.com/thinkalpha/table-rdf",
   "dependencies": [
