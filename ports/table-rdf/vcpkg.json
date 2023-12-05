@@ -1,6 +1,7 @@
 {
   "name": "table-rdf",
   "version": "0.3.1",
+  "port-version": "1",
   "description": "Table Record Data Format (RDF) Library",
   "homepage": "https://github.com/thinkalpha/table-rdf",
   "dependencies": [
@@ -20,6 +21,10 @@
     {
       "name": "spdlog",
       "version>=": "1.10.0"
+    },
+    {
+      "name": "tbb",
+      "version>=": "2021.10.0"
     },
     {
       "name": "vcpkg-cmake",
