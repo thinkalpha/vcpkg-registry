@@ -1,0 +1,48 @@
+{
+  "name": "hypha",
+  "version": "0.5.0",
+  "description": "A simple library for adding a web server to a C++ application",
+  "homepage": "https://github.com/thinkalpha/hypha",
+  "dependencies": [
+    {
+      "name": "boost-asio",
+      "version>=": "1.80.0"
+    },
+    {
+      "name": "boost-beast",
+      "version>=": "1.80.0"
+    },
+    {
+      "name": "boost-bimap",
+      "version>=": "1.80.0"
+    },
+    {
+      "name": "boost-uuid",
+      "version>=": "1.80.0"
+    },
+    {
+      "name": "catch2",
+      "version>=": "2.13.8#1"
+    },
+    {
+      "name": "jwt-cpp",
+      "version>=": "0.6.0"
+    },
+    {
+      "name": "nlohmann-json",
+      "version>=": "3.11.2"
+    },
+    {
+      "name": "spdlog",
+      "version>=": "1.10.0"
+    },
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ]
+}
