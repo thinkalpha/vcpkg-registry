@@ -1,4 +1,4 @@
-vcpkg_from_github(
+vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO thinkalpha/hypha
     HEAD_REF main
