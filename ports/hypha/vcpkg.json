@@ -1,6 +1,6 @@
 {
   "name": "hypha",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "A simple library for adding a web server to a C++ application",
   "homepage": "https://github.com/thinkalpha/hypha",
   "dependencies": [

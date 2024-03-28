@@ -2,7 +2,7 @@ vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL https://github.com/thinkalpha/hypha
     HEAD_REF main
-    REF 1e1ffb168c77944847ead0cad49310fe8dc210ec
+    REF 4ffc651845d8c4ba1debfed8a4f43f077bce0dbb
 )
 
 vcpkg_cmake_configure(
