@@ -1,0 +1,20 @@
+{
+  "name": "jinker",
+  "version": "0.5.0",
+  "description": "A C++ logging library for use by backend services",
+  "homepage": "https://github.com/thinkalpha/jinker",
+  "dependencies": [
+    {
+      "name": "spdlog",
+      "version>=": "1.13.0"
+    },
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ]
+}
