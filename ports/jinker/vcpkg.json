@@ -1,10 +1,14 @@
 {
   "name": "jinker",
   "version": "0.5.0",
-  "port-version": 1,
+  "port-version": 2,
   "description": "A C++ logging library for use by backend services",
   "homepage": "https://github.com/thinkalpha/jinker",
   "dependencies": [
+    {
+      "name": "boost-assert",
+      "version>=": "1.84.0"
+    },
     {
       "name": "spdlog",
       "version>=": "1.13.0"
