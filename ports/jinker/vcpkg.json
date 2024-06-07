@@ -1,6 +1,7 @@
 {
   "name": "jinker",
   "version": "0.6.0",
+  "port-version": 1,
   "description": "A C++ logging library for use by backend services",
   "homepage": "https://github.com/thinkalpha/jinker",
   "dependencies": [
@@ -21,7 +22,7 @@
       "dependencies": [
         {
           "name": "catch2",
-          "version>=": "3.0.0"
+          "version>=": "3.0.1"
         }
       ]
     }
