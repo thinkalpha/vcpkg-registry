@@ -1,18 +1,11 @@
 {
   "name": "jinker",
-  "version": "0.5.0",
-  "port-version": 2,
+  "version": "0.6.0",
   "description": "A C++ logging library for use by backend services",
   "homepage": "https://github.com/thinkalpha/jinker",
   "dependencies": [
-    {
-      "name": "boost-assert",
-      "version>=": "1.84.0"
-    },
-    {
-      "name": "spdlog",
-      "version>=": "1.13.0"
-    },
+    "boost-assert",
+    "spdlog",
     {
       "name": "vcpkg-cmake",
       "host": true
@@ -21,5 +14,16 @@
       "name": "vcpkg-cmake-config",
       "host": true
     }
-  ]
+  ],
+  "features": {
+    "unit-tests": {
+      "description": "Enable Catch2 unit testing",
+      "dependencies": [
+        {
+          "name": "catch2",
+          "version>=": "3.0.0"
+        }
+      ]
+    }
+  }
 }
