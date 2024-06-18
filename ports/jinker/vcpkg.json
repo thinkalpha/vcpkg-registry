@@ -1,7 +1,6 @@
 {
   "name": "jinker",
-  "version": "0.6.0",
-  "port-version": 1,
+  "version": "0.6.2",
   "description": "A C++ logging library for use by backend services",
   "homepage": "https://github.com/thinkalpha/jinker",
   "dependencies": [
@@ -17,6 +16,12 @@
     }
   ],
   "features": {
+    "gbench": {
+      "description": "Enable Google benchmarks",
+      "dependencies": [
+        "benchmark"
+      ]
+    },
     "unit-tests": {
       "description": "Enable Catch2 unit testing",
       "dependencies": [

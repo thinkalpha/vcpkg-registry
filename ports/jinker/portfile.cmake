@@ -2,13 +2,15 @@ vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL https://github.com/thinkalpha/jinker
     HEAD_REF main
-    REF ce33911280189cca93a911db53f5f2e7cf6a72c0
+    REF 492af84b77be7f64d11f61ad27bf4f2801e49639
 )
 
 # If the unit-tests feature is requested, then -DJINK_BUILD_TESTS=ON is added to FEATURE_OPTIONS.
+# If the gbench feature is requested, then -DJINK_BUILD_GBENCH=ON is added to FEATURE_OPTIONS.
 vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     FEATURES
         unit-tests JINK_BUILD_TESTS
+        gbench JINK_BUILD_GBENCH
 )
 
 vcpkg_cmake_configure(
